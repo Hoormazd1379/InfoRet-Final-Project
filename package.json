@@ -1,0 +1,28 @@
+{
+  "name": "InformationRetrievalStuff",
+  "version": "1.0.0",
+  "description": "Drug library search engine",
+  "main": "index.js",
+  "author": "Hoormazd & Bahram, The ones and onlys",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "DEBUG=router:* nodemon --delay 1 --ignore public/ app.js",
+    "test": "mocha --exit",
+    "ejsc": "node ejs-compile.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "package.json": "^2.0.1"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "should": "^13.2.3",
+    "socket.io-client": "^4.5.4",
+    "supertest": "^6.3.2"
+  }
+}
